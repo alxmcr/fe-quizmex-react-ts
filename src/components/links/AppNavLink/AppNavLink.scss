@@ -4,11 +4,17 @@
   background-color: variables.$color-california-500;
   border-radius: 8px;
   box-shadow: 4px 4px 0 0 #000;
+  color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-family: "Alexandria", sans-serif;
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
 
   height: variables.$btn-height;
   width: 100%;

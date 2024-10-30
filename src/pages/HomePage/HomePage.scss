@@ -12,23 +12,31 @@
     justify-content: center;
   }
 
+  &__button {
+    background-color: variables.$color-california-500;
+  }
+
   &__container {
     @include mixins.mobile {
-      background-color: variables.$color-california-500;
+      background-color: variables.$color-pancho-300;
       height: 100vh;
       width: 100%;
     }
 
     @include mixins.tablet {
+      background-color: variables.$color-pancho-300;
+
       border-radius: variables.$border-radius-page-container;
 
-      background-color: variables.$color-celtic-700;
       height: variables.$height-page-container;
       width: variables.$width-page-container;
     }
 
     @include mixins.desktop {
-      background-color: variables.$color-pancho-800;
+      background-color: variables.$color-pancho-300;
+
+      border-radius: variables.$border-radius-page-container;
+
       height: variables.$height-page-container;
       width: variables.$width-page-container;
     }

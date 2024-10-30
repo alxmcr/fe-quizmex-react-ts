@@ -17,6 +17,8 @@
   }
 
   &__container {
+    padding: 16px;
+
     @include mixins.mobile {
       background-color: variables.$color-pancho-300;
       height: 100vh;
@@ -40,5 +42,13 @@
       height: variables.$height-page-container;
       width: variables.$width-page-container;
     }
+  }
+
+  &__description {
+    font-family: "Alexandria", serif;
+  }
+
+  &__title {
+    font-family: "Rubik Gemstones", system-ui;
   }
 }

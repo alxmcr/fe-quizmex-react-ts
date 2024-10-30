@@ -1,5 +1,5 @@
-import { AppButton } from "../../components/buttons/AppButton";
 import { Icon110x110Poncho } from "../../components/icons/110x110/Icon110x110Poncho";
+import { AppNavLink } from "../../components/links/AppNavLink";
 import "./HomePage.scss";
 
 export function HomePage() {
@@ -11,7 +11,7 @@ export function HomePage() {
         <p className="home-page__description">
           Play to test your knowledge about Mexico's history
         </p>
-        <AppButton>Play</AppButton>
+        <AppNavLink to="/questions">Play</AppNavLink>
       </div>
     </main>
   );

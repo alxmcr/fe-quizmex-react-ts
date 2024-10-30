@@ -20,6 +20,8 @@
     }
 
     @include mixins.tablet {
+      border-radius: variables.$border-radius-page-container;
+
       background-color: variables.$color-celtic-700;
       height: variables.$height-page-container;
       width: variables.$width-page-container;

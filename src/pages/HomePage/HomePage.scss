@@ -67,6 +67,10 @@
     gap: 8px;
   }
 
+  &__logo {
+    color: variables.$color-celtic-900;
+  }
+
   &__title {
     color: variables.$color-celtic-900;
     font-family: "Rubik Gemstones", system-ui;

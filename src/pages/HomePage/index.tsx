@@ -6,7 +6,7 @@ export function HomePage() {
   return (
     <main className="home-page">
       <div className="home-page__container">
-        <Icon110x110Poncho />
+        <Icon110x110Poncho className="home-page__logo" />
         <div className="home-page__details">
           <h1 className="home-page__title">QuizMex</h1>
           <p className="home-page__description">

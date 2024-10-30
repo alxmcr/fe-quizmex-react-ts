@@ -1,12 +1,12 @@
-@use "../../variables";
-@use "../../mixins";
+@import "../../variables";
+@import "../../mixins";
 
 .home-page {
-  background-color: variables.$bg-page;
+  background-color: $bg-page;
 
   &__container {
     height: 500px;
-    width: 500px;
+    width: 100%;
 
     @include mixins.mobile {
       background-color: red;
@@ -14,10 +14,12 @@
 
     @include mixins.tablet {
       background-color: green;
+      width: $width-page-container;
     }
 
     @include mixins.desktop {
       background-color: blue;
+      width: $width-page-container;
     }
   }
 }

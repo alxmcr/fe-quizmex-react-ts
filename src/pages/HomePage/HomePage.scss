@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.home-page {
+  background-color: $bg-page;
+
+  &__container {
+    background-color: brown;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width > 320px) {
+  .home-page {
+    &__container {
+      height: $height-page-container;
+      width: $width-page-container;
+    }
+  }
+}

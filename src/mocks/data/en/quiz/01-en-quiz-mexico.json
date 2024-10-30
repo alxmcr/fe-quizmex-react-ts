@@ -1,0 +1,182 @@
+[
+  {
+    "id": "qmex-01",
+    "question": "What year did Mexico declare its independence from Spain?",
+    "options": ["1810", "1821", "1910", "2000"],
+    "correctAnswer": "1810",
+    "hint": "It started with a famous 'Grito'."
+  },
+  {
+    "id": "qmex-02",
+    "question": "Which leader is known as the 'Abolisher of Slavery' in Mexico?",
+    "options": ["Emiliano Zapata", "Benito Juárez", "Porfirio Díaz", "Hidalgo"],
+    "correctAnswer": "Benito Juárez",
+    "hint": "He wore a big hat and had a big heart."
+  },
+  {
+    "id": "qmex-03",
+    "question": "What is celebrated on September 16th in Mexico?",
+    "options": [
+      "Day of the Dead",
+      "Independence Day",
+      "Cinco de Mayo",
+      "Mexican Revolution"
+    ],
+    "correctAnswer": "Independence Day",
+    "hint": "It's not just about tacos!"
+  },
+  {
+    "id": "qmex-04",
+    "question": "Who was known as 'Pancho Villa'?",
+    "options": [
+      "A famous painter",
+      "A revolutionary leader",
+      "A famous chef",
+      "A mariachi singer"
+    ],
+    "correctAnswer": "A revolutionary leader",
+    "hint": "He rode a horse but wasn't just a cowboy."
+  },
+  {
+    "id": "qmex-05",
+    "question": "What is the significance of the Virgin of Guadalupe?",
+    "options": [
+      "Patron saint of Mexico",
+      "National flower",
+      "Independence Day",
+      "A famous dish"
+    ],
+    "correctAnswer": "Patron saint of Mexico",
+    "hint": "She’s often found on altars, not on menus."
+  },
+  {
+    "id": "qmex-06",
+    "question": "Which conflict is known as the 'Mexican Revolution'?",
+    "options": ["1910-1920", "1846-1848", "1861-1867", "1970-1980"],
+    "correctAnswer": "1910-1920",
+    "hint": "It involved a lot of mustaches."
+  },
+  {
+    "id": "qmex-07",
+    "question": "Who is known as 'El Caudillo'?",
+    "options": [
+      "Benito Juárez",
+      "Emiliano Zapata",
+      "Francisco Villa",
+      "Hidalgo"
+    ],
+    "correctAnswer": "Francisco Villa",
+    "hint": "He was both a bandit and a hero!"
+  },
+  {
+    "id": "qmex-08",
+    "question": "What famous document did Miguel Hidalgo ring in?",
+    "options": [
+      "The Constitution",
+      "The Grito de Dolores",
+      "The Treaty of Guadalupe",
+      "The Declaration of Independence"
+    ],
+    "correctAnswer": "The Grito de Dolores",
+    "hint": "It's like a loud 'wake-up' call!"
+  },
+  {
+    "id": "qmex-09",
+    "question": "Which empire was defeated by the Spanish conquistadors?",
+    "options": ["Aztec", "Inca", "Mayan", "Toltec"],
+    "correctAnswer": "Aztec",
+    "hint": "They built pyramids, but not enough armor."
+  },
+  {
+    "id": "qmex-10",
+    "question": "What was Porfirio Díaz known for?",
+    "options": [
+      "Education reform",
+      "Dictatorship",
+      "Independence",
+      "Culinary arts"
+    ],
+    "correctAnswer": "Dictatorship",
+    "hint": "He wasn't a fan of sharing power."
+  },
+  {
+    "id": "qmex-11",
+    "question": "What did the Aztecs use cacao beans for?",
+    "options": ["Currency", "Food", "Medicine", "All of the above"],
+    "correctAnswer": "All of the above",
+    "hint": "Chocolate was very valuable!"
+  },
+  {
+    "id": "qmex-12",
+    "question": "Who wrote 'La Cucaracha', a song related to the Revolution?",
+    "options": ["José Martí", "Pancho Villa", "Zapata", "Unknown"],
+    "correctAnswer": "Unknown",
+    "hint": "It's a catchy tune, but the author is a mystery!"
+  },
+  {
+    "id": "qmex-13",
+    "question": "What was a common form of payment during the early Mexican economy?",
+    "options": ["Cacao", "Gold", "Spices", "All of the above"],
+    "correctAnswer": "All of the above",
+    "hint": "It was a 'trade' of flavors!"
+  },
+  {
+    "id": "qmex-14",
+    "question": "Which president is known for his efforts to modernize Mexico?",
+    "options": [
+      "Lázaro Cárdenas",
+      "Porfirio Díaz",
+      "Benito Juárez",
+      "Emiliano Zapata"
+    ],
+    "correctAnswer": "Lázaro Cárdenas",
+    "hint": "He was all about the green revolution."
+  },
+  {
+    "id": "qmex-15",
+    "question": "What does 'Taco Tuesday' actually have to do with?",
+    "options": [
+      "A Mexican holiday",
+      "A revolutionary event",
+      "The Aztec calendar",
+      "A popular food day"
+    ],
+    "correctAnswer": "A popular food day",
+    "hint": "It's not a historical event, just a delicious one!"
+  },
+  {
+    "id": "qmex-16",
+    "question": "What ancient civilization is known for the pyramids at Teotihuacan?",
+    "options": ["Mayan", "Olmec", "Aztec", "Inca"],
+    "correctAnswer": "Aztec",
+    "hint": "They were big fans of sun worship."
+  },
+  {
+    "id": "qmex-17",
+    "question": "What was the original name of Mexico City?",
+    "options": ["Tenochtitlán", "Teotihuacan", "Cuzco", "Mexico-Tenochtitlán"],
+    "correctAnswer": "Tenochtitlán",
+    "hint": "It was built on water, not land!"
+  },
+  {
+    "id": "qmex-18",
+    "question": "Who was known as the 'Father of Mexican Independence'?",
+    "options": ["Hidalgo", "Zapata", "Villa", "Cortés"],
+    "correctAnswer": "Hidalgo",
+    "hint": "He started the fiesta!"
+  },
+  {
+    "id": "qmex-19",
+    "question": "Which day marks the start of the Mexican Revolution?",
+    "options": ["November 20", "September 16", "May 5", "December 12"],
+    "correctAnswer": "November 20",
+    "hint": "It wasn't about a party but a battle."
+  },
+  {
+    "id": "qmex-20",
+    "question": "What is the main ingredient in 'Mole', a traditional Mexican sauce?",
+    "options": ["Chocolate", "Chili", "Tomato", "Corn"],
+    "correctAnswer": "Chocolate",
+    "hint": "It’s not just for dessert!"
+  }
+]

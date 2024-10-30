@@ -1,0 +1,187 @@
+[
+  {
+    "id": "qmex-01",
+    "question": "¿En qué año México declaró su independencia de España?",
+    "options": ["1810", "1821", "1910", "2000"],
+    "correctAnswer": "1810",
+    "hint": "Comenzó con un famoso 'Grito'."
+  },
+  {
+    "id": "qmex-02",
+    "question": "¿Qué líder es conocido como el 'Abajador de la Esclavitud' en México?",
+    "options": ["Emiliano Zapata", "Benito Juárez", "Porfirio Díaz", "Hidalgo"],
+    "correctAnswer": "Benito Juárez",
+    "hint": "Llevaba un gran sombrero y un gran corazón."
+  },
+  {
+    "id": "qmex-03",
+    "question": "¿Qué se celebra el 16 de septiembre en México?",
+    "options": [
+      "Día de los Muertos",
+      "Día de la Independencia",
+      "Cinco de Mayo",
+      "Revolución Mexicana"
+    ],
+    "correctAnswer": "Día de la Independencia",
+    "hint": "¡No se trata solo de tacos!"
+  },
+  {
+    "id": "qmex-04",
+    "question": "¿Quién es conocido como 'Pancho Villa'?",
+    "options": [
+      "Un famoso pintor",
+      "Un líder revolucionario",
+      "Un famoso chef",
+      "Un cantante de mariachi"
+    ],
+    "correctAnswer": "Un líder revolucionario",
+    "hint": "Montaba un caballo, pero no solo era un vaquero."
+  },
+  {
+    "id": "qmex-05",
+    "question": "¿Cuál es el significado de la Virgen de Guadalupe?",
+    "options": [
+      "Patrona de México",
+      "Flor nacional",
+      "Día de la Independencia",
+      "Un plato famoso"
+    ],
+    "correctAnswer": "Patrona de México",
+    "hint": "A menudo se encuentra en altares, ¡no en menús!"
+  },
+  {
+    "id": "qmex-06",
+    "question": "¿Qué conflicto se conoce como la 'Revolución Mexicana'?",
+    "options": ["1910-1920", "1846-1848", "1861-1867", "1970-1980"],
+    "correctAnswer": "1910-1920",
+    "hint": "Involucró muchos bigotes."
+  },
+  {
+    "id": "qmex-07",
+    "question": "¿Quién es conocido como 'El Caudillo'?",
+    "options": [
+      "Benito Juárez",
+      "Emiliano Zapata",
+      "Francisco Villa",
+      "Hidalgo"
+    ],
+    "correctAnswer": "Francisco Villa",
+    "hint": "¡Fue tanto un bandido como un héroe!"
+  },
+  {
+    "id": "qmex-08",
+    "question": "¿Qué famoso documento hizo sonar Miguel Hidalgo?",
+    "options": [
+      "La Constitución",
+      "El Grito de Dolores",
+      "El Tratado de Guadalupe",
+      "La Declaración de Independencia"
+    ],
+    "correctAnswer": "El Grito de Dolores",
+    "hint": "¡Es como un 'despertar' ruidoso!"
+  },
+  {
+    "id": "qmex-09",
+    "question": "¿Qué imperio fue derrotado por los conquistadores españoles?",
+    "options": ["Azteca", "Inca", "Maya", "Tolteca"],
+    "correctAnswer": "Azteca",
+    "hint": "Construyeron pirámides, ¡pero no suficiente armadura!"
+  },
+  {
+    "id": "qmex-10",
+    "question": "¿Por qué era conocido Porfirio Díaz?",
+    "options": [
+      "Reforma educativa",
+      "Dictadura",
+      "Independencia",
+      "Artes culinarias"
+    ],
+    "correctAnswer": "Dictadura",
+    "hint": "No era fanático de compartir el poder."
+  },
+  {
+    "id": "qmex-11",
+    "question": "¿Qué usaban los aztecas como moneda?",
+    "options": ["Frijoles", "Oro", "Especias", "Todo lo anterior"],
+    "correctAnswer": "Todo lo anterior",
+    "hint": "¡El chocolate era muy valioso!"
+  },
+  {
+    "id": "qmex-12",
+    "question": "¿Quién escribió 'La Cucaracha', una canción relacionada con la Revolución?",
+    "options": ["José Martí", "Pancho Villa", "Zapata", "Desconocido"],
+    "correctAnswer": "Desconocido",
+    "hint": "Es una melodía pegajosa, ¡pero el autor es un misterio!"
+  },
+  {
+    "id": "qmex-13",
+    "question": "¿Cuál era una forma común de pago en la economía mexicana temprana?",
+    "options": ["Cacao", "Oro", "Especias", "Todo lo anterior"],
+    "correctAnswer": "Todo lo anterior",
+    "hint": "¡Era un 'trueque' de sabores!"
+  },
+  {
+    "id": "qmex-14",
+    "question": "¿Qué presidente es conocido por sus esfuerzos para modernizar México?",
+    "options": [
+      "Lázaro Cárdenas",
+      "Porfirio Díaz",
+      "Benito Juárez",
+      "Emiliano Zapata"
+    ],
+    "correctAnswer": "Lázaro Cárdenas",
+    "hint": "Él estaba a favor de la revolución verde."
+  },
+  {
+    "id": "qmex-15",
+    "question": "¿Qué tiene que ver 'Taco Tuesday'?",
+    "options": [
+      "Una fiesta mexicana",
+      "Un evento revolucionario",
+      "El calendario azteca",
+      "Un día de comida popular"
+    ],
+    "correctAnswer": "Un día de comida popular",
+    "hint": "¡No es un evento histórico, solo uno delicioso!"
+  },
+  {
+    "id": "qmex-16",
+    "question": "¿Qué civilización antigua es conocida por las pirámides de Teotihuacán?",
+    "options": ["Maya", "Olmeca", "Azteca", "Inca"],
+    "correctAnswer": "Azteca",
+    "hint": "Eran grandes adoradores del sol."
+  },
+  {
+    "id": "qmex-17",
+    "question": "¿Cuál era el nombre original de la Ciudad de México?",
+    "options": ["Tenochtitlán", "Teotihuacán", "Cuzco", "México-Tenochtitlán"],
+    "correctAnswer": "Tenochtitlán",
+    "hint": "¡Se construyó sobre el agua, no en la tierra!"
+  },
+  {
+    "id": "qmex-18",
+    "question": "¿Quién es conocido como el 'Padre de la Independencia Mexicana'?",
+    "options": ["Hidalgo", "Zapata", "Villa", "Cortés"],
+    "correctAnswer": "Hidalgo",
+    "hint": "¡Él comenzó la fiesta!"
+  },
+  {
+    "id": "qmex-19",
+    "question": "¿Qué día marca el inicio de la Revolución Mexicana?",
+    "options": [
+      "20 de noviembre",
+      "16 de septiembre",
+      "5 de mayo",
+      "12 de diciembre"
+    ],
+    "correctAnswer": "20 de noviembre",
+    "hint": "No se trataba de una fiesta, sino de una batalla."
+  },
+  {
+    "id": "qmex-20",
+    "question": "¿Cuál es el ingrediente principal en 'Mole', una salsa tradicional mexicana?",
+    "options": ["Chocolate", "Chile", "Tomate", "Maíz"],
+    "correctAnswer": "Chocolate",
+    "hint": "¡No es solo para el postre!"
+  }
+]

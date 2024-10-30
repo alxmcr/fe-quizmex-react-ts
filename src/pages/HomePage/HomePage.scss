@@ -6,6 +6,10 @@
   height: 100vh;
   width: 100vw;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @include mixins.tablet {
     align-items: center;
     display: flex;
@@ -17,7 +21,14 @@
   }
 
   &__container {
+    border: 1px solid #ff2211;
+
     padding: 16px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include mixins.mobile {
       background-color: variables.$color-pancho-300;
@@ -47,10 +58,16 @@
   &__description {
     font-family: "Alexandria", serif;
     font-size: 18px;
+
+    text-align: center;
   }
 
   &__title {
     font-family: "Rubik Gemstones", system-ui;
     font-size: 58px;
+    font-weight: 100;
+
+    text-align: center;
+    text-transform: uppercase;
   }
 }

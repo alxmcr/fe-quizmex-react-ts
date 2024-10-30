@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 28px;
 
     @include mixins.mobile {
       background-color: variables.$color-pancho-300;
@@ -60,12 +61,22 @@
     text-align: center;
   }
 
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   &__title {
+    color: variables.$color-celtic-900;
     font-family: "Rubik Gemstones", system-ui;
     font-size: 58px;
     font-weight: 100;
 
     text-align: center;
     text-transform: uppercase;
+
+    margin: 0;
+    height: 56px;
   }
 }

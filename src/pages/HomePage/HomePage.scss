@@ -3,13 +3,14 @@
 
 .home-page {
   background-color: variables.$bg-page;
+  height: 100vh;
+  width: 100vw;
 
   &__container {
-    height: 500px;
-    width: 100%;
-
     @include mixins.mobile {
       background-color: variables.$color-california-500;
+      height: 100vh;
+      width: 100%;
     }
 
     @include mixins.tablet {

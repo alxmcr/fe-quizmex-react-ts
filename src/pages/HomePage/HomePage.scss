@@ -1,20 +1,23 @@
 @import "../../variables";
+@import "../../mixins";
 
 .home-page {
   background-color: $bg-page;
 
   &__container {
-    background-color: brown;
-    height: 100vh;
-    width: 100vw;
-  }
-}
+    height: 500px;
+    width: 500px;
 
-@media screen and (min-width > 320px) {
-  .home-page {
-    &__container {
-      height: $height-page-container;
-      width: $width-page-container;
+    @include mobile {
+      background-color: red;
+    }
+
+    @include tablet {
+      background-color: green;
+    }
+
+    @include desktop {
+      background-color: blue;
     }
   }
 }

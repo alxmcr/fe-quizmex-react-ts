@@ -6,6 +6,12 @@
   height: 100vh;
   width: 100vw;
 
+  @include mixins.tablet {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   &__container {
     @include mixins.mobile {
       background-color: variables.$color-california-500;
@@ -15,11 +21,13 @@
 
     @include mixins.tablet {
       background-color: variables.$color-celtic-700;
+      height: variables.$height-page-container;
       width: variables.$width-page-container;
     }
 
     @include mixins.desktop {
       background-color: variables.$color-pancho-800;
+      height: variables.$height-page-container;
       width: variables.$width-page-container;
     }
   }

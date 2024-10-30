@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "scss:migrate": "sass-migrator module --migrate-deps src/pages/HomePage/HomePage.scss"
+    "scss:migrate": "sass-migrator module --migrate-deps src/pages/HomePage/HomePage.scss src/components/buttons/AppButton/AppButton.scss"
   },
   "dependencies": {
     "react": "^18.3.1",

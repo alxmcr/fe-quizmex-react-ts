@@ -1,5 +1,23 @@
-@import "../../../variables";
+@use "../../../variables";
 
 .app-button {
-  height: $btn-height;
+  background-color: variables.$color-california-500;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 0 #000;
+
+  text-transform: uppercase;
+
+  height: variables.$btn-height;
+
+  &--perfect {
+    background-color: variables.$color-celtic-500;
+  }
+
+  &--great-work {
+    background-color: variables.$color-pancho-900;
+  }
+
+  &--failed {
+    background-color: variables.$color-clam-shell-400;
+  }
 }

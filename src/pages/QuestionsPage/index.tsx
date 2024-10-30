@@ -1,5 +1,5 @@
 import { QuestionContainer } from "../../components/containers/QuestionContainer";
-import { QuestionData } from "../../types/serviceTypes";
+import { QuestionData } from "../../types/service.types";
 import "./QuestionsPage.scss";
 
 type Props = {

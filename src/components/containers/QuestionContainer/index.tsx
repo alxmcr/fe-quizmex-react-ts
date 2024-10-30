@@ -1,4 +1,4 @@
-import { QuestionData } from "../../../types/serviceTypes";
+import { QuestionData } from "../../../types/service.types";
 import "./QuestionContainer.scss";
 
 type Props = {

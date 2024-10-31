@@ -1,14 +1,21 @@
+import { ListItemAnswer } from "../ListItemAnswer";
+
 type Props = {
   answers: string[];
 };
 
 export function ListAnswers({ answers = [] }: Props) {
+  const answerSelected = "";
+
   return (
     <ul className="list-answers">
       {answers.map((answer, index) => (
-        <li key={index} className="list-answers__answer">
-          {answer}
-        </li>
+        <ListItemAnswer
+          key={index}
+          index={index}
+          answer={answer}
+          isChecked={answer === answerSelected}
+        />
       ))}
     </ul>
   );

@@ -26,9 +26,6 @@ export function QuestionsPage() {
   return (
     <main className="questions-page">
       <div className="questions-page__container">
-        <h2 className="questions-page__subtitle">
-          Questions {currentIndexQuestion + 1} / {questions.length}
-        </h2>
         <QuestionsContainer
           questions={questions}
           currentIndexQuestion={currentIndexQuestion}

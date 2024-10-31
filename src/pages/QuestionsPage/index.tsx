@@ -4,7 +4,7 @@ import { LoadingStates } from "../../types/service.types";
 import "./QuestionsPage.scss";
 
 export function QuestionsPage() {
-  const currentIndexQuestion = -1;
+  const currentIndexQuestion = 1;
   const { questions, errorQuestions, statusLoadQuestions } = useQuestions();
 
   if (LoadingStates.PENDING === statusLoadQuestions) {

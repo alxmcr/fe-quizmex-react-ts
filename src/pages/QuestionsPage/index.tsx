@@ -3,11 +3,8 @@ import { useQuestions } from "../../hooks/useQuestions";
 import { LoadingStates } from "../../types/service.types";
 import "./QuestionsPage.scss";
 
-type Props = {
-  currentIndexQuestion: number;
-};
-
-export function QuestionsPage({ currentIndexQuestion = -1 }: Props) {
+export function QuestionsPage() {
+  const currentIndexQuestion = -1;
   const { questions, errorQuestions, statusLoadQuestions } = useQuestions();
 
   if (LoadingStates.PENDING === statusLoadQuestions) {

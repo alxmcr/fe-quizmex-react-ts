@@ -28,10 +28,15 @@ export function QuestionsPage({ currentIndexQuestion = -1 }: Props) {
 
   return (
     <main className="questions-page">
-      <QuestionsContainer
-        questions={questions}
-        currentIndexQuestion={currentIndexQuestion}
-      />
+      <div className="questions-page__container">
+        <h2 className="questions-page__subtitle">
+          Questions {currentIndexQuestion} / {questions.length}
+        </h2>
+        <QuestionsContainer
+          questions={questions}
+          currentIndexQuestion={currentIndexQuestion}
+        />
+      </div>
     </main>
   );
 }

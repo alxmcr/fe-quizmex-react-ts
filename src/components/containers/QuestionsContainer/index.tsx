@@ -1,5 +1,4 @@
 import { QuestionData } from "../../../types/service.types";
-import { QuestionContainer } from "../QuestionContainer";
 import "./QuestionsContainer.scss";
 
 type Props = {
@@ -34,13 +33,8 @@ export function QuestionsContainer({
   }
 
   return (
-    <div className="questions-page">
-      <div className="questions-page__container">
-        <h2 className="questions-page__subtitle">
-          Questions {currentIndexQuestion}/12
-        </h2>
-        <QuestionContainer question={questions[currentIndexQuestion]} />
-      </div>
+    <div className="questions-container">
+      {/* <QuestionContainer question={questions[currentIndexQuestion]} /> */}
     </div>
   );
 }

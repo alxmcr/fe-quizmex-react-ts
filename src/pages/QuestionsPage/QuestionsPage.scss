@@ -19,12 +19,6 @@
   &__container {
     padding: 16px;
 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 28px;
-
     @include mixins.mobile {
       background-color: variables.$color-pancho-300;
       height: 100vh;

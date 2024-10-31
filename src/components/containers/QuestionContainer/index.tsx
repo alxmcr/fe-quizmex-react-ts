@@ -8,8 +8,8 @@ type Props = {
 
 export function QuestionContainer(props: Props) {
   return (
-    <div>
-      <h1 className="question__title">{props.question.question}</h1>
+    <div className="question-container">
+      <h1 className="question-container__title">{props.question.question}</h1>
       <FormQuestion question={props.question} />
     </div>
   );

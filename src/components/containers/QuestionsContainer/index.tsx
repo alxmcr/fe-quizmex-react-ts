@@ -19,7 +19,10 @@ export function QuestionsContainer({
     );
   }
 
-  if (currentIndexQuestion < 0) {
+  if (
+    currentIndexQuestion - 1 < 0 ||
+    currentIndexQuestion - 1 >= questions.length
+  ) {
     return (
       <div className="questions-container">
         <h1 className="questions-page__no-questions">
@@ -31,7 +34,7 @@ export function QuestionsContainer({
 
   return (
     <div className="questions-container">
-      <QuestionContainer question={questions[currentIndexQuestion]} />
+      <QuestionContainer question={questions[currentIndexQuestion - 1]} />
     </div>
   );
 }

@@ -10,8 +10,23 @@
   width: 100%;
   border-radius: 16px;
 
-  background-color: variables.$color-celtic-900;
-  color: variables.$color-pancho-300;
+  &--failed {
+    background-color: variables.$color-clam-shell-400;
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  &--great-work {
+    background-color: variables.$color-pancho-900;
+    border: 1px solid variables.$color-pancho-900;
+    color: variables.$color-pancho-300;
+  }
+
+  &--perfect {
+    background-color: variables.$color-celtic-900;
+    border: 1px solid variables.$color-celtic-900;
+    color: variables.$color-pancho-300;
+  }
 
   &__subtitle {
     font-family: "Alexandria", sans-serif;

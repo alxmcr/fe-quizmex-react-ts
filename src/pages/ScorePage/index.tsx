@@ -4,20 +4,33 @@ import { AppButton } from "../../components/buttons/AppButton";
 import "./ScorePage.scss";
 
 export function ScorePage() {
-  const maxScore = 10;
-  const correctScore = 8;
-  const incorrectScore = maxScore - correctScore;
+  const maxScoreQuiz = 10;
+  const correctScoreQuiz = 8;
+  const incorrectScoreQuiz = maxScoreQuiz - correctScoreQuiz;
+
+  function getVariant(maxScore = 0, correctScore = 0) {
+    if (correctScore > 0 && maxScore > 0 && correctScore === maxScore) {
+      return "perfect";
+    } else if (correctScore >= maxScore / 2) {
+      return "great-work";
+    }
+    return "failed";
+  }
 
   return (
     <main className="score-page">
       <div className="score-page__container">
-        <BoxResults />
+        <BoxResults variant={getVariant(maxScoreQuiz, correctScoreQuiz)} />
         <div className="score-page__scores">
-          <BoxScore title="Correct" score={correctScore} maxScore={maxScore} />
+          <BoxScore
+            title="Correct"
+            score={correctScoreQuiz}
+            maxScore={maxScoreQuiz}
+          />
           <BoxScore
             title="Incorrect"
-            score={incorrectScore}
-            maxScore={maxScore}
+            score={incorrectScoreQuiz}
+            maxScore={maxScoreQuiz}
           />
         </div>
         <AppButton>Play again</AppButton>

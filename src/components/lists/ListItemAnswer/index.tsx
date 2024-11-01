@@ -1,4 +1,5 @@
 import React from "react";
+import "./ListItemAnswer.scss";
 
 type Props = {
   index: number;

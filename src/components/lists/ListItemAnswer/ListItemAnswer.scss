@@ -7,7 +7,16 @@
   font-family: "Alexandria", sans-serif;
   font-size: 20px;
 
-  height: 68px;
+  min-height: 68px;
+  padding-right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--checked {
+    background-color: variables.$color-clam-shell-500;
+  }
 
   &__input {
     display: none;
@@ -19,9 +28,5 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-
-    &--checked {
-      background-color: variables.$color-clam-shell-500;
-    }
   }
 }

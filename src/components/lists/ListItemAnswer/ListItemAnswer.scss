@@ -7,6 +7,10 @@
 
   height: 68px;
 
+  &__input {
+    display: none;
+  }
+
   &__label {
     display: flex;
     text-align: center;

@@ -33,7 +33,9 @@ export function ScorePage() {
             maxScore={maxScoreQuiz}
           />
         </div>
-        <AppButton>Play again</AppButton>
+        <AppButton variant={getVariant(maxScoreQuiz, correctScoreQuiz)}>
+          {correctScoreQuiz < 5 ? "Try again" : "Play again"}
+        </AppButton>
       </div>
     </main>
   );

@@ -2,7 +2,7 @@ import { Icon110x110Star } from "../../icons/110x110/Icon110x110Star";
 import "./BoxResults.scss";
 
 type Props = {
-  variant: "perfect" | "great-work" | "failed";
+  variant: string;
 };
 
 export function BoxResults({ variant = "great-work" }: Props) {

@@ -1,6 +1,7 @@
 import { BoxResults } from "../../components/boxes/BoxResults";
 import { BoxScore } from "../../components/boxes/BoxScore";
 import { AppButton } from "../../components/buttons/AppButton";
+import { KindOfScore } from "../../types/app.enums";
 import "./ScorePage.scss";
 
 export function ScorePage() {
@@ -10,11 +11,11 @@ export function ScorePage() {
 
   function getVariant(maxScore = 0, correctScore = 0) {
     if (correctScore > 0 && maxScore > 0 && correctScore === maxScore) {
-      return "perfect";
+      return KindOfScore.PERFECT;
     } else if (correctScore >= maxScore / 2) {
-      return "great-work";
+      return KindOfScore.GREAT_WORK;
     }
-    return "failed";
+    return KindOfScore.FAILED;
   }
 
   return (

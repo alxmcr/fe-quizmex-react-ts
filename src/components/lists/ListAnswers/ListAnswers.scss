@@ -1,0 +1,21 @@
+@use "../../../variables";
+@use "../../../mixins";
+
+.list-answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  max-height: 322px;
+  overflow-y: auto;
+
+  @include mixins.custom-scrollbar(
+    8px,
+    variables.$color-celtic-900,
+    transparent
+  );
+}

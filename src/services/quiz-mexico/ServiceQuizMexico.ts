@@ -1,6 +1,6 @@
 import mockQuestionsEn from "../../mocks/data/en/quiz/01-en-quiz-mexico.json";
 import mockQuestionsEs from "../../mocks/data/es/quiz/01-es-quiz-mexico.json";
-import { QuestionData } from "../../types/serviceTypes";
+import { QuestionData } from "../../types/service.types";
 import { IServiceQuizMexico } from "./IServiceQuizMexico";
 
 export class ServiceQuizMexico implements IServiceQuizMexico {

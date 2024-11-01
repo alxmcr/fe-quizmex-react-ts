@@ -6,7 +6,7 @@ export function BoxResults() {
     <div className="box-results">
       <h1 className="box-results__subtitle">Results</h1>
       <Icon110x110Star className="box-results__icon" />
-      <p className="box-results__title">Perfect</p>
+      <p className="box-results__title">Perfect!</p>
     </div>
   );
 }

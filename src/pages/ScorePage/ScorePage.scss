@@ -17,6 +17,7 @@
   }
 
   &__container {
+    height: variables.$height-page-container;
     padding: 16px;
 
     @include mixins.mobile {

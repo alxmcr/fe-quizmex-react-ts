@@ -4,7 +4,7 @@ type Props = {
   title: string;
   score: number;
   maxScore: number;
-  variant: string;
+  variant?: string;
 };
 
 export function BoxScore({

@@ -25,7 +25,6 @@ export function ScorePage() {
             title="Incorrect"
             score={incorrectScoreQuiz}
             maxScore={maxScoreQuiz}
-            variant={variant}
           />
         </div>
         <AppButton variant={variant}>

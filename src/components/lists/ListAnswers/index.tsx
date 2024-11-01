@@ -6,7 +6,7 @@ type Props = {
 };
 
 export function ListAnswers({ answers = [] }: Props) {
-  const answerSelected = "";
+  const answerSelected = "1821";
 
   return (
     <ul className="list-answers">

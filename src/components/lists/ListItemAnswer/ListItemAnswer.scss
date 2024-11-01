@@ -1,3 +1,5 @@
+@use "../../../variables";
+
 .list-item-answer {
   border-radius: 8px;
   border: 2px solid #000;
@@ -17,5 +19,9 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+
+    &--checked {
+      background-color: variables.$color-clam-shell-500;
+    }
   }
 }

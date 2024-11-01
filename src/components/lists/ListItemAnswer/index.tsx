@@ -18,7 +18,14 @@ export function ListItemAnswer({
 
   return (
     <li className="list-item-answer">
-      <label htmlFor={`answer-${index}`} className="list-item-answer__label">
+      <label
+        htmlFor={`answer-${index}`}
+        className={`list-item-answer__label ${
+          isChecked
+            ? "list-item-answer__label--checked"
+            : "list-item-answer__label"
+        }`}
+      >
         <input
           type="radio"
           className="list-item-answer__input"

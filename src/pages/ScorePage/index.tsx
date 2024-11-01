@@ -19,11 +19,13 @@ export function ScorePage() {
             title="Correct"
             score={correctScoreQuiz}
             maxScore={maxScoreQuiz}
+            variant={variant}
           />
           <BoxScore
             title="Incorrect"
             score={incorrectScoreQuiz}
             maxScore={maxScoreQuiz}
+            variant={variant}
           />
         </div>
         <AppButton variant={variant}>

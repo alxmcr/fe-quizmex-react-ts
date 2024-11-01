@@ -16,7 +16,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  height: variables.$btn-height;
+  min-height: variables.$btn-height;
   width: 100%;
 
   &:hover {

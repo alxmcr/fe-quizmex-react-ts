@@ -20,6 +20,11 @@
     height: variables.$height-page-container;
     padding: 16px;
 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
     @include mixins.mobile {
       background-color: variables.$color-pancho-300;
       height: 100vh;
@@ -48,5 +53,6 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    width: 100%;
   }
 }

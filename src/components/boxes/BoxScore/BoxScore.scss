@@ -1,0 +1,30 @@
+@use "../../../variables";
+
+.box-score {
+  border-radius: 16px;
+  border: 1px solid variables.$color-celtic-900;
+
+  height: 78px;
+  width: 134px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+
+  &__score {
+    margin: 0;
+
+    font-family: "Alexandria", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+
+    margin: 0;
+  }
+}

@@ -1,4 +1,5 @@
 import { ListItemAnswer } from "../ListItemAnswer";
+import "./ListAnswers.scss";
 
 type Props = {
   answers: string[];

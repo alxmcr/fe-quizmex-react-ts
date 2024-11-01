@@ -13,6 +13,11 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
   &--checked {
     background-color: variables.$color-clam-shell-500;
   }

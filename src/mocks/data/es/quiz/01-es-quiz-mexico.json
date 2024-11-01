@@ -2,7 +2,7 @@
   {
     "id": "qmex-01",
     "question": "¿En qué año México declaró su independencia de España?",
-    "options": ["1810", "1821", "1910", "2000", "2005", "2018"],
+    "options": ["1810", "1821", "1910", "2000"],
     "correctAnswer": "1810",
     "hint": "Comenzó con un famoso 'Grito'."
   },

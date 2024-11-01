@@ -1,6 +1,9 @@
+@use "../../../variables";
+@use "../../../mixins";
+
 .list-answers {
   margin: 0;
-  padding: 0;
+  padding: 0 8px 0 0;
   list-style: none;
 
   display: flex;
@@ -8,5 +11,11 @@
   gap: 16px;
 
   max-height: 322px;
-  overflow-y: auto;
+  overflow-y: scroll;
+
+  @include mixins.custom-scrollbar(
+    8px,
+    variables.$color-celtic-900,
+    transparent
+  );
 }

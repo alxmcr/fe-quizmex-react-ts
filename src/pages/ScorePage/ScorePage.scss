@@ -1,0 +1,59 @@
+@use "../../variables";
+@use "../../mixins";
+
+.score-page {
+  background-color: variables.$bg-page;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mixins.tablet {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    height: variables.$height-page-container;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    @include mixins.mobile {
+      background-color: variables.$color-pancho-300;
+      height: 100vh;
+      width: 100%;
+    }
+
+    @include mixins.tablet {
+      background-color: variables.$color-pancho-300;
+
+      border-radius: variables.$border-radius-page-container;
+
+      width: variables.$width-page-container;
+    }
+
+    @include mixins.desktop {
+      background-color: variables.$color-pancho-300;
+
+      border-radius: variables.$border-radius-page-container;
+
+      width: variables.$width-page-container;
+    }
+  }
+
+  &__scores {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

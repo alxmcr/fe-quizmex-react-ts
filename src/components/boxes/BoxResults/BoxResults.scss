@@ -1,0 +1,27 @@
+@use "../../../variables";
+
+.box-results {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+
+  background-color: variables.$color-celtic-900;
+  color: variables.$color-pancho-300;
+
+  &__subtitle {
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-family: "Rubik Gemstones", system-ui;
+    font-size: 36px;
+    font-weight: 200;
+  }
+}

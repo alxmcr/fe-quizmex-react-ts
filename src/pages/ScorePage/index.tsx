@@ -8,18 +8,22 @@ export function ScorePage() {
   const maxScoreQuiz = 10;
   const correctScoreQuiz = 7;
   const incorrectScoreQuiz = maxScoreQuiz - correctScoreQuiz;
-  const { variant } = useScoreVariant(correctScoreQuiz, maxScoreQuiz);
+  const { score } = useScoreVariant(correctScoreQuiz, maxScoreQuiz);
+
+  if (score === null) {
+    return null;
+  }
 
   return (
     <main className="score-page">
       <div className="score-page__container">
-        <BoxResults variant={variant} />
+        <BoxResults variant={score.code} />
         <div className="score-page__scores">
           <BoxScore
             title="Correct"
             score={correctScoreQuiz}
             maxScore={maxScoreQuiz}
-            variant={variant}
+            variant={score.code}
           />
           <BoxScore
             title="Incorrect"
@@ -27,7 +31,7 @@ export function ScorePage() {
             maxScore={maxScoreQuiz}
           />
         </div>
-        <AppButton variant={variant}>
+        <AppButton variant={score.code}>
           {correctScoreQuiz < 5 ? "Try again" : "Play again"}
         </AppButton>
       </div>

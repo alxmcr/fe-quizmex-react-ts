@@ -19,6 +19,20 @@
   min-height: variables.$btn-height;
   width: 100%;
 
+  &--perfect {
+    background-color: variables.$color-celtic-500;
+    color: #fff;
+  }
+
+  &--great-work {
+    background-color: variables.$color-pancho-900;
+    color: #fff;
+  }
+
+  &--failed {
+    background-color: variables.$color-clam-shell-400;
+  }
+
   &:hover {
     background-color: #000;
     color: #fff;

@@ -2,7 +2,7 @@ import { NavLink, NavLinkProps } from "react-router-dom";
 import "./AppNavLink.scss";
 
 interface Props extends NavLinkProps {
-  variant?: "perfect" | "great-work" | "failed";
+  variant?: string;
 }
 
 export function AppNavLink(props: Props) {

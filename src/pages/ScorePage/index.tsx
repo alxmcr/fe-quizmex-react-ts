@@ -1,6 +1,6 @@
 import { BoxResults } from "../../components/boxes/BoxResults";
 import { BoxScore } from "../../components/boxes/BoxScore";
-import { AppButton } from "../../components/buttons/AppButton";
+import { AppNavLink } from "../../components/links/AppNavLink";
 import { useScoreVariant } from "../../hooks/useScoreVariant";
 import "./ScorePage.scss";
 
@@ -31,9 +31,9 @@ export function ScorePage() {
             maxScore={maxScoreQuiz}
           />
         </div>
-        <AppButton variant={score.code}>
+        <AppNavLink to="/questions" variant={score.code}>
           {correctScoreQuiz < 5 ? "Try again" : "Play again"}
-        </AppButton>
+        </AppNavLink>
       </div>
     </main>
   );

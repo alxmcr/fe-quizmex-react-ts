@@ -1,0 +1,102 @@
+[
+  {
+    "id": "qmex-01",
+    "question": "What year did Mexico declare its independence from Spain?",
+    "options": ["1810", "1821", "1910", "2000"],
+    "correctAnswer": "1810",
+    "hint": "It started with a famous 'Grito'."
+  },
+  {
+    "id": "qmex-02",
+    "question": "Which leader is known as the 'Abolisher of Slavery' in Mexico?",
+    "options": ["Emiliano Zapata", "Benito Juárez", "Porfirio Díaz", "Hidalgo"],
+    "correctAnswer": "Benito Juárez",
+    "hint": "He wore a big hat and had a big heart."
+  },
+  {
+    "id": "qmex-03",
+    "question": "What is celebrated on September 16th in Mexico?",
+    "options": [
+      "Day of the Dead",
+      "Independence Day",
+      "Cinco de Mayo",
+      "Mexican Revolution"
+    ],
+    "correctAnswer": "Independence Day",
+    "hint": "It's not just about tacos!"
+  },
+  {
+    "id": "qmex-04",
+    "question": "Who was known as 'Pancho Villa'?",
+    "options": [
+      "A famous painter",
+      "A revolutionary leader",
+      "A famous chef",
+      "A mariachi singer"
+    ],
+    "correctAnswer": "A revolutionary leader",
+    "hint": "He rode a horse but wasn't just a cowboy."
+  },
+  {
+    "id": "qmex-05",
+    "question": "What is the significance of the Virgin of Guadalupe?",
+    "options": [
+      "Patron saint of Mexico",
+      "National flower",
+      "Independence Day",
+      "A famous dish"
+    ],
+    "correctAnswer": "Patron saint of Mexico",
+    "hint": "She’s often found on altars, not on menus."
+  },
+  {
+    "id": "qmex-06",
+    "question": "Which conflict is known as the 'Mexican Revolution'?",
+    "options": ["1910-1920", "1846-1848", "1861-1867", "1970-1980"],
+    "correctAnswer": "1910-1920",
+    "hint": "It involved a lot of mustaches."
+  },
+  {
+    "id": "qmex-07",
+    "question": "Who is known as 'El Caudillo'?",
+    "options": [
+      "Benito Juárez",
+      "Emiliano Zapata",
+      "Francisco Villa",
+      "Hidalgo"
+    ],
+    "correctAnswer": "Francisco Villa",
+    "hint": "He was both a bandit and a hero!"
+  },
+  {
+    "id": "qmex-08",
+    "question": "What famous document did Miguel Hidalgo ring in?",
+    "options": [
+      "The Constitution",
+      "The Grito de Dolores",
+      "The Treaty of Guadalupe",
+      "The Declaration of Independence"
+    ],
+    "correctAnswer": "The Grito de Dolores",
+    "hint": "It's like a loud 'wake-up' call!"
+  },
+  {
+    "id": "qmex-09",
+    "question": "Which empire was defeated by the Spanish conquistadors?",
+    "options": ["Aztec", "Inca", "Mayan", "Toltec"],
+    "correctAnswer": "Aztec",
+    "hint": "They built pyramids, but not enough armor."
+  },
+  {
+    "id": "qmex-10",
+    "question": "What was Porfirio Díaz known for?",
+    "options": [
+      "Education reform",
+      "Dictatorship",
+      "Independence",
+      "Culinary arts"
+    ],
+    "correctAnswer": "Dictatorship",
+    "hint": "He wasn't a fan of sharing power."
+  }
+]

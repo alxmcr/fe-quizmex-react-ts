@@ -1,5 +1,5 @@
-import mockQuestionsEn from "../../mocks/data/en/quiz/01-en-quiz-mexico.json";
-import mockQuestionsEs from "../../mocks/data/es/quiz/01-es-quiz-mexico.json";
+import mockQuestionsEn from "../../mocks/data/en/quiz/02-en-quiz-mexico-ten.json";
+import mockQuestionsEs from "../../mocks/data/es/quiz/02-es-quiz-mexico-ten.json";
 import { QuestionData } from "../../types/service.types";
 import { IServiceQuizMexico } from "./IServiceQuizMexico";
 

@@ -15,6 +15,7 @@ export function FormQuestion(props: Props) {
 
   return (
     <form onSubmit={onSubmit} className="form-question">
+      <h1 className="question-container__title">{props.question.question}</h1>
       <ListAnswers answers={props.question.options} />
       <div className="form-question__actions">
         <AppButton type="submit">Send answer</AppButton>

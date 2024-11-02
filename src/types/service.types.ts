@@ -5,3 +5,7 @@ export type QuestionData = {
   correctAnswer: string;
   hint: string;
 };
+
+export type QuizData = {
+  questions: QuestionData[];
+};

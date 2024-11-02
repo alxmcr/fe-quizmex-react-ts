@@ -4,9 +4,3 @@ export enum LoadingStates {
   SUCCESS = "SUCCESS",
   ERROR = "ERROR",
 }
-
-export enum KindOfScore {
-  PERFECT = "perfect",
-  GREAT_WORK = "great-work",
-  FAILED = "failed",
-}

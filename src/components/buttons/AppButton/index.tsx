@@ -10,6 +10,7 @@ export function AppButton(props: Props) {
       className={`app-button ${
         props.variant ? `app-button--${props.variant}` : ""
       }`}
+      {...props}
     >
       {props.children}
     </button>

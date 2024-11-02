@@ -1,6 +1,6 @@
 import { QuestionsContainer } from "../../components/containers/QuestionsContainer";
 import { useQuestions } from "../../hooks/useQuestions";
-import { LoadingStates } from "../../types/service.types";
+import { LoadingStates } from "../../types/app.enums";
 import "./QuestionsPage.scss";
 
 export function QuestionsPage() {

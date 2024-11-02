@@ -13,6 +13,32 @@
   gap: 6px;
   justify-content: center;
 
+  &--failed {
+    background-color: variables.$color-clam-shell-400;
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  &--great-work {
+    background-color: variables.$color-pancho-900;
+    border: 1px solid variables.$color-pancho-900;
+    color: #fff;
+
+    .box-score__title {
+      color: variables.$color-pancho-300;
+    }
+  }
+
+  &--perfect {
+    background-color: variables.$color-celtic-900;
+    border: 1px solid variables.$color-celtic-900;
+    color: #fff;
+
+    .box-score__title {
+      color: variables.$color-pancho-300;
+    }
+  }
+
   &__score {
     margin: 0;
 

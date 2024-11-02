@@ -1,26 +1,39 @@
 import { BoxResults } from "../../components/boxes/BoxResults";
 import { BoxScore } from "../../components/boxes/BoxScore";
 import { AppButton } from "../../components/buttons/AppButton";
+import { useScoreVariant } from "../../hooks/useScoreVariant";
 import "./ScorePage.scss";
 
 export function ScorePage() {
-  const maxScore = 10;
-  const correctScore = 8;
-  const incorrectScore = maxScore - correctScore;
+  const maxScoreQuiz = 10;
+  const correctScoreQuiz = 7;
+  const incorrectScoreQuiz = maxScoreQuiz - correctScoreQuiz;
+  const { score } = useScoreVariant(correctScoreQuiz, maxScoreQuiz);
+
+  if (score === null) {
+    return null;
+  }
 
   return (
     <main className="score-page">
       <div className="score-page__container">
-        <BoxResults />
+        <BoxResults variant={score.code} />
         <div className="score-page__scores">
-          <BoxScore title="Correct" score={correctScore} maxScore={maxScore} />
+          <BoxScore
+            title="Correct"
+            score={correctScoreQuiz}
+            maxScore={maxScoreQuiz}
+            variant={score.code}
+          />
           <BoxScore
             title="Incorrect"
-            score={incorrectScore}
-            maxScore={maxScore}
+            score={incorrectScoreQuiz}
+            maxScore={maxScoreQuiz}
           />
         </div>
-        <AppButton>Play again</AppButton>
+        <AppButton variant={score.code}>
+          {correctScoreQuiz < 5 ? "Try again" : "Play again"}
+        </AppButton>
       </div>
     </main>
   );

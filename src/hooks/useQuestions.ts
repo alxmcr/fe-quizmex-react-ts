@@ -1,6 +1,7 @@
 import React from "react";
-import { LoadingStates, QuestionData } from "../types/service.types";
 import { ServiceQuizMexico } from "../services/quiz-mexico/ServiceQuizMexico";
+import { LoadingStates } from "../types/app.enums";
+import { QuestionData } from "../types/service.types";
 
 export function useQuestions() {
   const [questions, setQuestions] = React.useState<QuestionData[]>([]);

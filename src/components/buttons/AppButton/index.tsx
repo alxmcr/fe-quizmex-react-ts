@@ -1,7 +1,7 @@
 import "./AppButton.scss";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "perfect" | "great-work" | "failed";
+  variant?: string;
 }
 
 export function AppButton(props: Props) {

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "qmex-01",
+    "question": "¿En qué año México declaró su independencia de España?",
+    "options": ["1810", "1821", "1910", "2000"],
+    "correctAnswer": "1810",
+    "hint": "Comenzó con un famoso 'Grito'."
+  },
+  {
+    "id": "qmex-02",
+    "question": "¿Qué líder es conocido como el 'Abajador de la Esclavitud' en México?",
+    "options": ["Emiliano Zapata", "Benito Juárez", "Porfirio Díaz", "Hidalgo"],
+    "correctAnswer": "Benito Juárez",
+    "hint": "Llevaba un gran sombrero y un gran corazón."
+  },
+  {
+    "id": "qmex-03",
+    "question": "¿Qué se celebra el 16 de septiembre en México?",
+    "options": [
+      "Día de los Muertos",
+      "Día de la Independencia",
+      "Cinco de Mayo",
+      "Revolución Mexicana"
+    ],
+    "correctAnswer": "Día de la Independencia",
+    "hint": "¡No se trata solo de tacos!"
+  },
+  {
+    "id": "qmex-04",
+    "question": "¿Quién es conocido como 'Pancho Villa'?",
+    "options": [
+      "Un famoso pintor",
+      "Un líder revolucionario",
+      "Un famoso chef",
+      "Un cantante de mariachi"
+    ],
+    "correctAnswer": "Un líder revolucionario",
+    "hint": "Montaba un caballo, pero no solo era un vaquero."
+  },
+  {
+    "id": "qmex-05",
+    "question": "¿Cuál es el significado de la Virgen de Guadalupe?",
+    "options": [
+      "Patrona de México",
+      "Flor nacional",
+      "Día de la Independencia",
+      "Un plato famoso"
+    ],
+    "correctAnswer": "Patrona de México",
+    "hint": "A menudo se encuentra en altares, ¡no en menús!"
+  },
+  {
+    "id": "qmex-06",
+    "question": "¿Qué conflicto se conoce como la 'Revolución Mexicana'?",
+    "options": ["1910-1920", "1846-1848", "1861-1867", "1970-1980"],
+    "correctAnswer": "1910-1920",
+    "hint": "Involucró muchos bigotes."
+  },
+  {
+    "id": "qmex-07",
+    "question": "¿Quién es conocido como 'El Caudillo'?",
+    "options": [
+      "Benito Juárez",
+      "Emiliano Zapata",
+      "Francisco Villa",
+      "Hidalgo"
+    ],
+    "correctAnswer": "Francisco Villa",
+    "hint": "¡Fue tanto un bandido como un héroe!"
+  },
+  {
+    "id": "qmex-08",
+    "question": "¿Qué famoso documento hizo sonar Miguel Hidalgo?",
+    "options": [
+      "La Constitución",
+      "El Grito de Dolores",
+      "El Tratado de Guadalupe",
+      "La Declaración de Independencia"
+    ],
+    "correctAnswer": "El Grito de Dolores",
+    "hint": "¡Es como un 'despertar' ruidoso!"
+  },
+  {
+    "id": "qmex-09",
+    "question": "¿Qué imperio fue derrotado por los conquistadores españoles?",
+    "options": ["Azteca", "Inca", "Maya", "Tolteca"],
+    "correctAnswer": "Azteca",
+    "hint": "Construyeron pirámides, ¡pero no suficiente armadura!"
+  },
+  {
+    "id": "qmex-10",
+    "question": "¿Por qué era conocido Porfirio Díaz?",
+    "options": [
+      "Reforma educativa",
+      "Dictadura",
+      "Independencia",
+      "Artes culinarias"
+    ],
+    "correctAnswer": "Dictadura",
+    "hint": "No era fanático de compartir el poder."
+  }
+]

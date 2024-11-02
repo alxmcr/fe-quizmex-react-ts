@@ -6,7 +6,7 @@ import "./ScorePage.scss";
 
 export function ScorePage() {
   const maxScoreQuiz = 10;
-  const correctScoreQuiz = 2;
+  const correctScoreQuiz = 10;
   const incorrectScoreQuiz = maxScoreQuiz - correctScoreQuiz;
   const { score } = useScoreVariant(correctScoreQuiz, maxScoreQuiz);
 

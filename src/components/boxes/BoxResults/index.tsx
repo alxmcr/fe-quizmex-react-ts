@@ -1,5 +1,5 @@
 import { ScoreData } from "../../../types/app.types";
-import { Icon110x110Star } from "../../icons/110x110/Icon110x110Star";
+import { AppIcon110x110 } from "../../icons/AppIcon110x110";
 import "./BoxResults.scss";
 
 type Props = {
@@ -18,7 +18,7 @@ export function BoxResults({ score }: Props) {
       }`}
     >
       <h1 className="box-results__subtitle">Results</h1>
-      <Icon110x110Star className="box-results__icon" />
+      <AppIcon110x110 className="box-results__icon" iconName={score.icon} />
       <p className="box-results__title">{score.text}</p>
     </div>
   );

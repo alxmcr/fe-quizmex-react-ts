@@ -7,7 +7,12 @@ interface Props extends NavLinkProps {
 
 export function AppNavLink(props: Props) {
   return (
-    <NavLink to={props.to} className="app-nav-link">
+    <NavLink
+      to={props.to}
+      className={`app-nav-link ${
+        props.variant ? `app-nav-link--${props.variant}` : ""
+      }`}
+    >
       {props.children}
     </NavLink>
   );

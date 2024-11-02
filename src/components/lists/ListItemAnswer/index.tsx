@@ -6,18 +6,14 @@ import { setAnswerSelectedAction } from "../../../store/quiz/actions/quizActions
 type Props = {
   index: number;
   answer: string;
-  isChecked: boolean;
 };
 
-export function ListItemAnswer({
-  index = 0,
-  answer = "",
-  isChecked = false,
-}: Props) {
+export function ListItemAnswer({ index = 0, answer = "" }: Props) {
   const { dispatch } = React.useContext(QuizContext);
   const [selectedOption, setSelectedOption] = React.useState("");
 
   const onChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("ev.target.value", ev.target.value);
     setSelectedOption(ev.target.value);
     dispatch(setAnswerSelectedAction(ev.target.value));
   };
@@ -25,7 +21,9 @@ export function ListItemAnswer({
   return (
     <li
       className={`list-item-answer ${
-        isChecked ? "list-item-answer--checked" : "list-item-answer"
+        selectedOption === answer
+          ? "list-item-answer--checked"
+          : "list-item-answer"
       }`}
     >
       <label htmlFor={`answer-${index}`} className={`list-item-answer__label`}>
@@ -35,8 +33,8 @@ export function ListItemAnswer({
           name={answer}
           id={`answer-${index}`}
           onChange={onChange}
-          value={selectedOption}
-          checked={isChecked}
+          value={answer}
+          checked={selectedOption === answer}
         />
         <span className="list-item-answer__text">{answer}</span>
       </label>

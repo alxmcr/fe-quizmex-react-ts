@@ -35,7 +35,7 @@ export function QuestionsContainer({
   return (
     <div className="questions-container">
       <h2 className="questions-container__subtitle">
-        Questions {currentIndexQuestion + 1} / {questions.length}
+        Questions {currentIndexQuestion} / {questions.length}
       </h2>
       <QuestionContainer question={questions[currentIndexQuestion - 1]} />
     </div>

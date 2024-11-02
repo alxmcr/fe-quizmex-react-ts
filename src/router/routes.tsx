@@ -1,7 +1,5 @@
 import { RouteObject } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
-import { QuestionsPage } from "../pages/QuestionsPage";
-import { ScorePage } from "../pages/ScorePage";
 
 export const routes: RouteObject[] = [
   {
@@ -12,11 +10,17 @@ export const routes: RouteObject[] = [
   {
     id: "questions-page",
     path: "/questions",
-    element: <QuestionsPage />,
+    async lazy() {
+      const { QuestionsPage } = await import("../pages/QuestionsPage/index");
+      return { Component: QuestionsPage };
+    },
   },
   {
     id: "score-page",
     path: "/score",
-    element: <ScorePage />,
+    async lazy() {
+      const { ScorePage } = await import("../pages/ScorePage/index");
+      return { Component: ScorePage };
+    },
   },
 ];

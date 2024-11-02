@@ -7,6 +7,6 @@ export enum LoadingStates {
 
 export enum KindOfScore {
   PERFECT = "perfect",
-  GREAT_WORK = "great_work",
+  GREAT_WORK = "great-work",
   FAILED = "failed",
 }

@@ -17,7 +17,7 @@ export function ScorePage() {
   return (
     <main className="score-page">
       <div className="score-page__container">
-        <BoxResults variant={score.code} />
+        <BoxResults score={score} />
         <div className="score-page__scores">
           <BoxScore
             title="Correct"

@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
 import {
   increaseScoreQuizAction,
   moveNextQuestionAction,
 } from "../../../store/quiz/actions/quizActions";
 import { QuestionData } from "../../../types/service.types";
-import { QuizAction } from "../../../types/store.quiz.types.actions";
 import { AppButton } from "../../buttons/AppButton";
 import { ListAnswers } from "../../lists/ListAnswers";
 import "./FormQuestion.scss";
@@ -16,21 +16,16 @@ type Props = {
 
 export function FormQuestion(props: Props) {
   const navigate = useNavigate();
-  const dispatch = (x: QuizAction) => {
-    console.log(x);
-  };
-  const answerSelected = "1810";
-  const indexCurrentQuestion = 1;
-  const questions = [];
+  const { state, dispatch } = React.useContext(QuizContext);
 
   const onSubmitAnswer = (ev: React.FormEvent) => {
     ev.preventDefault();
 
-    if (answerSelected === props.question.correctAnswer) {
+    if (state.answerSelected === props.question.correctAnswer) {
       dispatch(increaseScoreQuizAction());
     }
 
-    if (indexCurrentQuestion < questions.length) {
+    if (state.indexCurrentQuestion < state.quiz.questions.length) {
       dispatch(moveNextQuestionAction());
     } else {
       navigate("/score");

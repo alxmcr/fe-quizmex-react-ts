@@ -1,12 +1,14 @@
+import React from "react";
 import { ListItemAnswer } from "../ListItemAnswer";
 import "./ListAnswers.scss";
+import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
 
 type Props = {
   answers: string[];
 };
 
 export function ListAnswers({ answers = [] }: Props) {
-  const answerSelected = "1821";
+  const { state } = React.useContext(QuizContext);
 
   return (
     <ul className="list-answers">
@@ -15,7 +17,7 @@ export function ListAnswers({ answers = [] }: Props) {
           key={index}
           index={index}
           answer={answer}
-          isChecked={answer === answerSelected}
+          isChecked={answer === state.answerSelected}
         />
       ))}
     </ul>

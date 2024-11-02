@@ -6,7 +6,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function AppButton(props: Props) {
   return (
-    <button className={`app-button app-button--${props.variant}`}>
+    <button {...props} className={`app-button app-button--${props.variant}`}>
       {props.children}
     </button>
   );

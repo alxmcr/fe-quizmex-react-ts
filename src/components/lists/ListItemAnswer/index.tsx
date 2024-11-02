@@ -1,5 +1,7 @@
 import React from "react";
 import "./ListItemAnswer.scss";
+import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
+import { setAnswerSelectedAction } from "../../../store/quiz/actions/quizActions";
 
 type Props = {
   index: number;
@@ -12,8 +14,10 @@ export function ListItemAnswer({
   answer = "",
   isChecked = false,
 }: Props) {
+  const { dispatch } = React.useContext(QuizContext);
+
   const onChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(ev.target.value);
+    dispatch(setAnswerSelectedAction(ev.target.value));
   };
 
   return (

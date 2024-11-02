@@ -22,13 +22,21 @@
   &--great-work {
     background-color: variables.$color-pancho-900;
     border: 1px solid variables.$color-pancho-900;
-    color: variables.$color-pancho-300;
+    color: #fff;
+
+    .box-score__title {
+      color: variables.$color-pancho-300;
+    }
   }
 
   &--perfect {
     background-color: variables.$color-celtic-900;
     border: 1px solid variables.$color-celtic-900;
-    color: variables.$color-pancho-300;
+    color: #fff;
+
+    .box-score__title {
+      color: variables.$color-pancho-300;
+    }
   }
 
   &__score {

@@ -21,9 +21,7 @@ export function ListItemAnswer({ index = 0, answer = "" }: Props) {
   return (
     <li
       className={`list-item-answer ${
-        selectedOption === answer
-          ? "list-item-answer--checked"
-          : "list-item-answer"
+        selectedOption === answer ? "list-item-answer--checked" : ""
       }`}
     >
       <label htmlFor={`answer-${index}`} className={`list-item-answer__label`}>

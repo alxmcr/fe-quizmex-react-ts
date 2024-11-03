@@ -1,11 +1,18 @@
-import { useSelector } from "react-redux";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { QuestionsContainer } from "../../components/containers/QuestionsContainer";
-import { RootState } from "../../store";
+import { AppDispatch, RootState } from "../../store";
+import { fetchQuiz } from "../../store/quiz/features/quizSlice.thunk";
 import { LoadingStates } from "../../types/app.enums";
 import "./QuestionsPage.scss";
 
 export function QuestionsPage() {
   const state = useSelector((state: RootState) => state.quiz);
+  const dispatch: AppDispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(fetchQuiz());
+  }, [dispatch]);
 
   if (LoadingStates.PENDING === state.statusLoadingQuiz) {
     return (

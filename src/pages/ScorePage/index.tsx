@@ -1,16 +1,17 @@
-import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { BoxResults } from "../../components/boxes/BoxResults";
 import { BoxScore } from "../../components/boxes/BoxScore";
 import { AppButton } from "../../components/buttons/AppButton";
 import { useScoreByQuiz } from "../../hooks/useScoreByQuiz";
-import { QuizContext } from "../../providers/QuizProvider/QuizContext";
+import { RootState } from "../../store";
 import { resetQuizAction } from "../../store/quiz/actions/quizActions";
 import "./ScorePage.scss";
-import { useNavigate } from "react-router-dom";
 
 export function ScorePage() {
   const navigate = useNavigate();
-  const { state, dispatch } = React.useContext(QuizContext);
+  const state = useSelector((state: RootState) => state.quiz);
+  const dispatch = useDispatch();
   const { score } = useScoreByQuiz(state.quiz, state.score);
 
   const onPlayAgain = () => {

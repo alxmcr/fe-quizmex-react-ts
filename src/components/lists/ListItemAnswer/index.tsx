@@ -1,7 +1,7 @@
 import React from "react";
-import "./ListItemAnswer.scss";
-import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
+import { useDispatch } from "react-redux";
 import { setAnswerSelectedAction } from "../../../store/quiz/actions/quizActions";
+import "./ListItemAnswer.scss";
 
 type Props = {
   index: number;
@@ -14,7 +14,7 @@ export function ListItemAnswer({
   answer = "",
   isChecked = false,
 }: Props) {
-  const { dispatch } = React.useContext(QuizContext);
+  const dispatch = useDispatch();
 
   const onChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setAnswerSelectedAction(ev.target.value));

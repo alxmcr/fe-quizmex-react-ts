@@ -1,11 +1,11 @@
-import React from "react";
+import { useSelector } from "react-redux";
 import { QuestionsContainer } from "../../components/containers/QuestionsContainer";
-import { QuizContext } from "../../providers/QuizProvider/QuizContext";
+import { RootState } from "../../store";
 import { LoadingStates } from "../../types/app.enums";
 import "./QuestionsPage.scss";
 
 export function QuestionsPage() {
-  const { state } = React.useContext(QuizContext);
+  const state = useSelector((state: RootState) => state.quiz);
 
   if (LoadingStates.PENDING === state.statusLoadingQuiz) {
     return (

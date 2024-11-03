@@ -1,14 +1,14 @@
-import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../store";
 import { ListItemAnswer } from "../ListItemAnswer";
 import "./ListAnswers.scss";
-import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
 
 type Props = {
   answers: string[];
 };
 
 export function ListAnswers({ answers = [] }: Props) {
-  const { state } = React.useContext(QuizContext);
+  const state = useSelector((state: RootState) => state.quiz);
 
   return (
     <ul className="list-answers">

@@ -44,11 +44,11 @@ Start the server
 
 - Score page - Great score
 
-![Score page - Great score](https://quiz-mex.netlify.app/screenshots/03-quiz-mex-score-page-freat-score.png)
+![Score page - Great score](https://quiz-mex.netlify.app/screenshots/04-quiz-mex-score-page-great-score.png)
 
 - Score page - Failed score
 
-![Score page - Failed score](https://quiz-mex.netlify.app/screenshots/03-quiz-mex-score-page-failed-score.png)
+![Score page - Failed score](https://quiz-mex.netlify.app/screenshots/05-quiz-mex-score-page-failed-score.png)
 
 ## Tech Stack
 

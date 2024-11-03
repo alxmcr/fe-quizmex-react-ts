@@ -4,7 +4,7 @@ import { QuestionData } from "../../types/service.types";
 import { IServiceQuizMexico } from "./IServiceQuizMexico";
 
 export class ServiceQuizMexico implements IServiceQuizMexico {
-  findAll(language = "es"): Promise<QuestionData[]> {
+  findAll(language = "en"): Promise<QuestionData[]> {
     return new Promise((resolve, reject) => {
       try {
         if (language === "es") {

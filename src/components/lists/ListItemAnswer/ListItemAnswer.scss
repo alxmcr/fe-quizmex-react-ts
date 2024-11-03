@@ -7,7 +7,7 @@
   font-family: "Alexandria", sans-serif;
   font-size: 20px;
 
-  min-height: 68px;
+  min-height: variables.$height-list-item;
 
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    min-height: variables.$height-list-item;
     width: 100%;
   }
 
@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 100%;
+    min-height: variables.$height-list-item;
     width: 100%;
   }
 }

@@ -1,9 +1,9 @@
-import { QuizProvider } from "./QuizProvider";
+import { QuizProviderRTK } from "./QuizProviderRTK";
 
 type Props = {
   children: React.ReactNode;
 };
 
 export function AppProviders({ children }: Props) {
-  return <QuizProvider>{children}</QuizProvider>;
+  return <QuizProviderRTK>{children}</QuizProviderRTK>;
 }

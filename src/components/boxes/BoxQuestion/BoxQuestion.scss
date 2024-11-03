@@ -1,0 +1,18 @@
+@use "../../../variables";
+
+.box-question {
+  border-radius: 16px;
+  height: 144px;
+  background-color: variables.$color-celtic-900;
+  color: #fff;
+
+  &__title {
+    font-family: "Alexandria", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 18px 14px;
+    min-height: 144px;
+  }
+}

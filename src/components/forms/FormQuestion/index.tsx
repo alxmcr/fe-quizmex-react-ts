@@ -9,6 +9,7 @@ import { QuestionData } from "../../../types/service.types";
 import { AppButton } from "../../buttons/AppButton";
 import { ListAnswers } from "../../lists/ListAnswers";
 import "./FormQuestion.scss";
+import { BoxQuestion } from "../../boxes/BoxQuestion";
 
 type Props = {
   question: QuestionData;
@@ -34,7 +35,7 @@ export function FormQuestion(props: Props) {
 
   return (
     <form onSubmit={onSubmitAnswer} className="form-question">
-      <h1 className="question-container__title">{props.question.question}</h1>
+      <BoxQuestion question={props.question.question} />
       <ListAnswers answers={props.question.options} />
       <div className="form-question__actions">
         <AppButton type="submit">Send answer</AppButton>

@@ -5,6 +5,11 @@
   height: 144px;
   background-color: variables.$color-celtic-900;
   color: #fff;
+  min-height: 144px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
   &__title {
     font-family: "Alexandria", sans-serif;
@@ -13,6 +18,5 @@
 
     margin: 0;
     padding: 18px 14px;
-    min-height: 144px;
   }
 }

@@ -5,7 +5,7 @@ import { BoxScore } from "../../components/boxes/BoxScore";
 import { AppButton } from "../../components/buttons/AppButton";
 import { useScoreByQuiz } from "../../hooks/useScoreByQuiz";
 import { RootState } from "../../store";
-import { resetQuizAction } from "../../store/quiz/actions/quizActions";
+import { resetRTK } from "../../store/quiz/features/quizSlice";
 import "./ScorePage.scss";
 
 export function ScorePage() {
@@ -15,7 +15,7 @@ export function ScorePage() {
   const { score } = useScoreByQuiz(state.quiz, state.score);
 
   const onPlayAgain = () => {
-    dispatch(resetQuizAction());
+    dispatch(resetRTK());
     navigate("/questions");
   };
 

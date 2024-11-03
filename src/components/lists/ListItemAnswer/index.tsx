@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setAnswerSelectedAction } from "../../../store/quiz/actions/quizActions";
+import { setAnswerSelectedRTK } from "../../../store/quiz/features/quizSlice";
 import "./ListItemAnswer.scss";
 
 type Props = {
@@ -17,7 +17,7 @@ export function ListItemAnswer({
   const dispatch = useDispatch();
 
   const onChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setAnswerSelectedAction(ev.target.value));
+    dispatch(setAnswerSelectedRTK(ev.target.value));
   };
 
   return (

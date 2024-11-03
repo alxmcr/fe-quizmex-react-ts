@@ -1,15 +1,16 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
+import { RootState } from "../../../store";
 import {
-  increaseScoreQuizAction,
-  moveNextQuestionAction,
-} from "../../../store/quiz/actions/quizActions";
+  increaseScoreRTK,
+  moveNextQuestionRTK,
+} from "../../../store/quiz/features/quizSlice";
 import { QuestionData } from "../../../types/service.types";
+import { BoxQuestion } from "../../boxes/BoxQuestion";
 import { AppButton } from "../../buttons/AppButton";
 import { ListAnswers } from "../../lists/ListAnswers";
 import "./FormQuestion.scss";
-import { BoxQuestion } from "../../boxes/BoxQuestion";
 
 type Props = {
   question: QuestionData;
@@ -17,17 +18,18 @@ type Props = {
 
 export function FormQuestion(props: Props) {
   const navigate = useNavigate();
-  const { state, dispatch } = React.useContext(QuizContext);
+  const state = useSelector((state: RootState) => state.quiz);
+  const dispatch = useDispatch();
 
   const onSubmitAnswer = (ev: React.FormEvent) => {
     ev.preventDefault();
 
     if (state.answerSelected === props.question.correctAnswer) {
-      dispatch(increaseScoreQuizAction());
+      dispatch(increaseScoreRTK());
     }
 
     if (state.indexCurrentQuestion < state.quiz.questions.length) {
-      dispatch(moveNextQuestionAction());
+      dispatch(moveNextQuestionRTK());
     } else {
       navigate("/score");
     }

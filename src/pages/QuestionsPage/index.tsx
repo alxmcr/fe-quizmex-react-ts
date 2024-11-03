@@ -1,11 +1,10 @@
-import React from "react";
 import { QuestionsContainer } from "../../components/containers/QuestionsContainer";
-import { QuizContext } from "../../providers/QuizProvider/QuizContext";
+import { useQuestionsRTK } from "../../hooks/useQuestionsRTK";
 import { LoadingStates } from "../../types/app.enums";
 import "./QuestionsPage.scss";
 
 export function QuestionsPage() {
-  const { state } = React.useContext(QuizContext);
+  const { state } = useQuestionsRTK();
 
   if (LoadingStates.PENDING === state.statusLoadingQuiz) {
     return (

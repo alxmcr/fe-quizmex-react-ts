@@ -8,31 +8,31 @@ export const quizSlice = createSlice({
   name: "quiz",
   initialState: initialStateQuizSlice,
   reducers: {
-    setQuestions: (state, action: PayloadAction<QuestionData[]>) => {
+    setQuestionsRTK: (state, action: PayloadAction<QuestionData[]>) => {
       state.quiz.questions = action.payload;
     },
-    setStatusLoading: (state, action: PayloadAction<string>) => {
+    setStatusLoadingRTK: (state, action: PayloadAction<string>) => {
       state.statusLoadingQuiz = action.payload;
     },
-    setError: (state, action: PayloadAction<Error>) => {
+    setErrorRTK: (state, action: PayloadAction<Error>) => {
       state.errorLoadingQuiz = action.payload;
     },
-    setAnswerSelected: (state, action: PayloadAction<string>) => {
+    setAnswerSelectedRTK: (state, action: PayloadAction<string>) => {
       state.answerSelected = action.payload;
     },
-    movePreviousQuestion: (state) => {
+    movePreviousQuestionRTK: (state) => {
       state.indexCurrentQuestion -= 1;
     },
-    moveNextQuestion: (state) => {
+    moveNextQuestionRTK: (state) => {
       state.indexCurrentQuestion += 1;
     },
-    increaseScore: (state) => {
+    increaseScoreRTK: (state) => {
       state.score += 1;
     },
-    decreaseScore: (state) => {
+    decreaseScoreRTK: (state) => {
       state.score -= 1;
     },
-    reset: (state) => {
+    resetRTK: (state) => {
       state.answerSelected = "";
       state.errorLoadingQuiz = null;
       state.indexCurrentQuestion = 1;
@@ -57,13 +57,13 @@ export const quizSlice = createSlice({
 export const quizReducer = quizSlice.reducer;
 
 export const {
-  setQuestions,
-  setStatusLoading,
-  setError,
-  setAnswerSelected,
-  movePreviousQuestion,
-  increaseScore,
-  decreaseScore,
-  moveNextQuestion,
-  reset,
+  setQuestionsRTK,
+  setStatusLoadingRTK,
+  setErrorRTK,
+  setAnswerSelectedRTK,
+  movePreviousQuestionRTK,
+  increaseScoreRTK,
+  decreaseScoreRTK,
+  moveNextQuestionRTK,
+  resetRTK,
 } = quizSlice.actions;

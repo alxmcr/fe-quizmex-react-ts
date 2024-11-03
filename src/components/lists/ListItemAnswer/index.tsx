@@ -1,7 +1,7 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { setAnswerSelectedRTK } from "../../../store/quiz/features/quizSlice";
 import "./ListItemAnswer.scss";
-import { QuizContext } from "../../../providers/QuizProvider/QuizContext";
-import { setAnswerSelectedAction } from "../../../store/quiz/actions/quizActions";
 
 type Props = {
   index: number;
@@ -14,10 +14,10 @@ export function ListItemAnswer({
   answer = "",
   isChecked = false,
 }: Props) {
-  const { dispatch } = React.useContext(QuizContext);
+  const dispatch = useDispatch();
 
   const onChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setAnswerSelectedAction(ev.target.value));
+    dispatch(setAnswerSelectedRTK(ev.target.value));
   };
 
   return (
